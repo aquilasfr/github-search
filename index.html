@@ -10,20 +10,28 @@
     <title>GitHub Search</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container mb-3 p-1">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4 title">git<span class="uppercase">h</span>ub finder</h1>
-              <p class="lead"><span class="uppercase">f</span>ind informations about git<span class="uppercase">h</span>ub user</p>
+                <h1 class="display-4 title text-capitalize">github finder</h1>
+              <p class="lead">Find informations about GitHub user</p>
             </div>
         </div>
     </header>
-    <div class="alert alert-primary container pd-alert"  role="alert">
-        <p class="h6 title">instructions:</p>
+    <div class="alert alert-primary container"  role="alert">
+        <h2 class="fs-6">instructions:</h2>
         <p>
             just type username script will automatically find informations</p>
       </div>
-    
+      <hr class="container">
+    </div>
+    <form class="container">
+        <div class="form-group">
+          <label for="exampleInputEmail1">GitHub username</label>
+          <input  type="email" class="form-control search-userName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="username">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
