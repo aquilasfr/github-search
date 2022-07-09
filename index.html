@@ -10,31 +10,109 @@
     <title>GitHub Search</title>
 </head>
 <body>
-    <header class="container mb-3 p-1 bg-light text-dark">
-        <div class="jumbotron jumbotron-fluid text-secondary">
-            <div class="container">
-                <h1 class="display-4 title text-capitalize">github finder</h1>
-              <p class="lead">Find informations about GitHub user</p>
-            </div>
-        </div>
-    </header>
-    <div class="alert alert-primary container"  role="alert">
-        <h2 class="fs-6">instructions:</h2>
-        <p>
-            just type username script will automatically find informations</p>
+  <header class="container mb-3 p-1 bg-light text-dark">
+    <div class="jumbotron jumbotron-fluid text-secondary">
+      <div class="container">
+          <h1 class="display-4 title text-capitalize">github finder</h1>
+        <p class="lead">Find informations about GitHub user</p>
       </div>
-      <hr class="container">
     </div>
-    <form class="container">
-        <div class="form-group">
-          <label for="exampleInputEmail1">GitHub username</label>
-          <input  type="" class="form-control search-userName my-1" aria-describedby="emailHelp" placeholder="username">
+  </header>
+  <div class="alert alert-primary container"  role="alert">
+    <h2 class="fs-6">instructions:</h2>
+    <p>
+      just type username script will automatically find informations</p>
+  </div>
+    <hr class="my-4 container">
+  </div>
+  <form class="container">
+    <div class="form-group">
+      <label for="exampleInputEmail1">GitHub username</label>
+      <input  type="" class="form-control search-userName my-1" aria-describedby="emailHelp" placeholder="username">
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Áquilas França
+      </div>
+      <div class="card-body row">
+        <div class="d-flex flex-column profile-wrapper col-2">
+          <img src="img/img-profile.png" class="img-thumbnail" alt="">
+          <button type="button" class="btn btn-danger mt-3">User profile</button>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <div class="col">
+          <span class="badge text-bg-dark">Repositories</span>   
+          <span class="badge text-bg-danger">Gists</span>
+          <span class="badge text-bg-success">Followers</span>
+          <span class="badge bg-info">Following</span>
+          <ul class="list-group mt-3">
+            <li class="list-group-item">Company/Organization</li>
+            <li class="list-group-item">Blog:</li>
+            <li class="list-group-item">Location: São Paulo</li>
+            <li class="list-group-item">Acount created</li>
+          </ul>    
+        </div>
+      </div>
+    </div>
+  </form>  
+</div>
+<h4 class="fs-7 font-weight-normal container mt-3">Last repositories</h4>
+<hr class="my-4 container">
+<div class="d-grid gap-3 container">
+  <div class="p-3 bg-light border row">
+    <div class="col-7">
+      atomic-design
+    </div>
+    <div class="col d-flex justify-content-between align-items-center">
+      <div>
+        <span class="badge  text-bg-dark">forks:0</span>
+        <span class="badge  text-bg-danger">watchers: 2</span>
+        <span class="badge  text-bg-success">Starts</span>
+      </div>
+     <button type="button" class="btn btn-secondary btn-sm">Repository URL</button>
+    </div>
+  </div>
+  <div class="p-3 bg-light border row">
+    <div class="col-7">
+      atomic-design
+    </div>
+    <div class="col d-flex justify-content-between align-items-center">
+      <div>
+        <span class="badge  text-bg-dark">forks:0</span>
+        <span class="badge  text-bg-danger">watchers: 2</span>
+        <span class="badge  text-bg-success">Starts</span>
+      </div>
+     <button type="button" class="btn btn-secondary btn-sm">Repository URL</button>
+    </div>
+  </div>
+  <div class="p-3 bg-light border row">
+    <div class="col-7">
+      atomic-design
+    </div>
+    <div class="col d-flex justify-content-between align-items-center">
+      <div>
+        <span class="badge  text-bg-dark">forks:0</span>
+        <span class="badge  text-bg-danger">watchers: 2</span>
+        <span class="badge  text-bg-success">Starts</span>
+      </div>
+     <button type="button" class="btn btn-secondary btn-sm">Repository URL</button>
+    </div>
+  </div>
+  <div class="p-3 bg-light border row">
+    <div class="col-7">
+      atomic-design
+    </div>
+    <div class="col d-flex justify-content-between align-items-center">
+      <div>
+        <span class="badge  text-bg-dark">forks:0</span>
+        <span class="badge  text-bg-danger">watchers: 2</span>
+        <span class="badge  text-bg-success">Starts</span>
+      </div>
+     <button type="button" class="btn btn-secondary btn-sm">Repository URL</button>
+    </div>
+  </div>
+</div>    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
-
 </html>
 
