@@ -1,0 +1,34 @@
+```<html>
+    <head></head>
+    <body>
+        <input id="nameInput" type="text" />
+        <button id="submit">Buscar</button>
+        <img id="profilePicture"/>
+    </body>
+</html>
+
+<script>
+
+    let userInfo
+    let repoInfo
+    document.getElementById('submit').addEventListener('click', () => {
+        fetch(`https://api.github.com/users/${document.getElementById('nameInput').value}`)
+        .then(response => response.json()).then(function(data){
+
+            userInfo = data
+
+            return fetch(`https://api.github.com/users/${document.getElementById('nameInput').value}/repos`)
+
+        }).then(response => response.json())
+            .then((data) => {
+                repoInfo = data
+
+                displayInfos()
+            })
+    })
+
+    const displayInfos = () => {
+        document.getElementById('profilePicture').setAttribute('src', userInfo.avatar_url)
+    }
+
+</script>
