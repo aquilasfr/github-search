@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="img/git-hub-icon.png">
     <title>GitHub Search</title>
@@ -29,6 +28,7 @@
   <form class="container">
     <div class="form-group">
       <label for="exampleInputEmail1">GitHub username</label>
+      <span id="messageAlert"></span>
       <input  type="" id="nameInput" class="form-control search-userName my-1" aria-describedby="emailHelp" placeholder="username">
       <button id="submit" type="button" class="btn btn-dark mb-2 mt-1 px-5">Search</button>
     </div>
@@ -38,9 +38,9 @@
       <div class="card-header p-3">        
       </div>
       <div class="card-body row">
-        <div class="d-flex flex-column profile-wrapper col-2">
+        <div class="d-flex flex-column align-items-center profile-wrapper col-2">
           <img id="profilePicture" src="img/foto-perfil-git.png" class="img-thumbnail" alt="">
-          <a id="userProfile" href="#" target="_blank"><button type="button" class="btn btn-danger mt-3">User profile</button></a>
+          <a id="userProfile" href="#" target="_blank"><button type="button" class="btn btn-danger mt-3 px-4">User profile</button></a>
         </div>
         <div class="col">
           <span id="repositories" class="badge text-bg-dark">Repositories:</span>   
@@ -60,20 +60,7 @@
 </div>
 <h4 class="fs-7 font-weight-normal container mt-3">Last repositories</h4>
 <hr class="my-4 container">
-<div id="lastRepositories"></div>
-<!--<div class="d-grid gap-3 container">
-  <div class="p-3 bg-light border row">
-    <div class="col-7">
-    </div>
-    <div class="col d-flex justify-content-between align-items-center">
-       <div>
-        <span id="forks" class="badge  text-bg-dark">forks:</span>
-        <span id="watchers" class="badge  text-bg-danger">watchers:</span>
-        <span id="starts" class="badge  text-bg-success">Starts:</span>
-      </div>
-     <button type="button" class="btn btn-secondary btn-sm">Repository URL</button>
-    </div> 
-  </div> --> 
+<div id="lastRepositories"></div>  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   <script src="index/main.js"></script>
